@@ -1,4 +1,5 @@
-baseurl = "localhost"
+#baseurl = "localhost"
+baseurl = "/"
 languageCode = "en-us"
 title = "Katolik"
 theme = "hugo-xmag"
