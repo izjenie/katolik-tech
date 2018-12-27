@@ -12,7 +12,7 @@
   <h1><span class="title">{{ .Title }}</span></h1>
 
   {{ if .Params.author }}
-  <h3 class="author">{{ partial "author_names.html" . }}</h3>
+  <h3 class="author">{{ partial "author_names.html" . }}, {{ .Date.Format "1 December 2006" }}</h3>
   {{ end }}
 
   {{ with .Params.tags }}

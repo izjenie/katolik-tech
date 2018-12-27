@@ -1,5 +1,5 @@
-#baseurl = "localhost"
-baseurl = "/"
+baseurl = "localhost"
+#baseurl = "/"
 languageCode = "en-us"
 title = "Katolik"
 theme = "hugo-xmag"
@@ -13,6 +13,9 @@ enableEmoji = true
 paginate = 9
 staticDir = ["static"]
 
+[taxonomies]
+  category = "categories"
+  tag = "tags"
 [permalinks]
     post = "/post/:year/:month/:day/:slug/"
 
