@@ -1,5 +1,5 @@
-baseurl = "localhost"
-#baseurl = "/"
+#baseurl = "localhost"
+baseurl = "http://www.coolbrain.today/"
 languageCode = "en-us"
 title = "Katolik"
 theme = "hugo-xmag"
