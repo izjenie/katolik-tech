@@ -1,33 +1,46 @@
-baseURL = "https://example.org/"
+baseurl = "/"
 languageCode = "en-us"
-title = "A Hugo theme"
-theme = "techlog-simple"
-defaultContentLanguage = "en"
-# defaultContentLanguage = "ja"
+title = "Hugo XMag"
+theme = "hugo-xmag"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+preserveTaxonomyNames = true
+footnotereturnlinkcontents = "↩"
 hasCJKLanguage = true
 enableEmoji = true
-pygmentsCodeFences = true
-pygmentsStyle = "friendly"
-enableGitInfo = true
-enableRobotsTXT = true
-# googleAnalytics = "UA-00000000-1"
+paginate = 6
 
-[taxonomies]
-category = "categories"
-tag = "tags"
-author = "authors"
+[permalinks]
+    post = "/post/:year/:month/:day/:slug/"
 
-[languages]
-[languages.en]
-weight = 1
-languageName = "English"
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+[[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 3
+[[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+[[menu.main]]
+    name = "Subscribe"
+    url = "/index.xml"
 
-[languages.ja]
-weight = 10
-languageName = "日本語"
+[params]
+    description = "A website built through Hugo and blogdown."
+    summary_length = 300
+    github_edit = "https://github.com/yihui/hugo-xmag/edit/master/exampleSite/content/"
+    footer = "&copy; [Yihui Xie](https://yihui.name) 2017 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
 
-[params.sns]
-github = "mazgi"
-twitter = "mazgi"
-instagram = "mazgi"
-# facebook = ""
+[params.text]
+    back = "&larr; Back to Home"
+    edit = "Edit this page &rarr;"
+    truncated = "&hellip;"
