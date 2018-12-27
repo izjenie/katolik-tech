@@ -10,12 +10,13 @@ footnotereturnlinkcontents = "↩"
 hasCJKLanguage = true
 enableEmoji = true
 paginate = 6
+staticDir = ["static"]
 
 [permalinks]
     post = "/post/:year/:month/:day/:slug/"
 
 [params.banner]
-    src = "/static/img/gerejakatolik.png"
+    src = "/img/gerejakatolik.png"
     alt = "alternative text on image"
 [[menu.main]]
     name = "Home"
